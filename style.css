@@ -6,7 +6,7 @@
 }
 
 :root {
---redText: white;
+--small-font: 11px;
 }
 
 body {
@@ -16,8 +16,11 @@ body {
     height: 100vh;
 }
 
-.whiteText {
+.background-white {
     background-color: white;
+}
+.whiteText {
+    color: white;
 }
 #main-container {
     width: 80vw;
@@ -26,10 +29,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
 
 }
+
+ p {
+    font-size: 10px;
+    margin: 10px 0 10px 10px;
+    opacity: .7;
+}
+
 
 .small-container {
     width: 23%;
@@ -44,11 +52,43 @@ body {
     background-color: #fafafa;
 }
 
-.dropboximage {
+.dashboard-background {
+    background-color: hsla(0, 4%, 90%, 0.984);
+    width: 95%;
+    height: 31px;
+    margin: 0 5px 0 5px;
+    border-radius: 5px;
+}
+
+.numbers-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    
+}
+
+.numbers {
+    font-size: var(--small-font);
+    background-color: lightgray;
+    opacity: .6;
+    padding: 3px 5px;
+    border-radius: 3px;
+    left: 85%;
+    position: absolute;
+    
+    
+}
+
+
+.icons {
     color: white;
     background-color: hsl(300, 86%, 40%);
     height: 20px;
     border-radius: 5px;
+}
+
+.icons-gray {
+    background-color: white;
 }
 
 #upDownImg {
@@ -66,26 +106,27 @@ body {
 
 #container-c {
     background-color: black;
-    color: var(--redText);
-}
-
-#container-d {
-    color: var(--redText);
 }
 
 
+h6 {
+    font-size: var(--small-font);
+    display: inline-block;
+    opacity: .9;
+    padding: 5px;
+}
 
 h5 {
-    display: inline-block;
-    padding: 5px;
-
+    font-size: var(--small-font);
+    opacity: .9;
+    padding: 5px; 
+    margin: 0 0 10px 5px;
 }
 
 .small-container div {
     display: flex;
     align-items: center;
     padding: 10px;
-
 }
 
 .thin-container div {
