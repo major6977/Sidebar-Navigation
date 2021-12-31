@@ -54,8 +54,8 @@ body {
 
 .dashboard-background {
     background-color: hsla(0, 4%, 90%, 0.984);
-    width: 95%;
-    height: 31px;
+    width: 100%;
+    padding: 5px;
     margin: 0 5px 0 5px;
     border-radius: 5px;
 }
@@ -79,12 +79,33 @@ body {
     
 }
 
+.thin-container  div {
+    display: flex;
+    margin: 13px 0;
+    align-items: center; 
+    flex-direction: column;
+}
 
+.thin-container  div + div {
+    /* display: flex; */
+    align-self: flex-start;
+    height: 37vh;
+    /* padding: 13px; */
+    align-items: center; 
+    flex-direction: column;
+    background-color: greenyellow;
+}
 .icons {
     color: white;
     background-color: hsl(300, 86%, 40%);
     height: 20px;
     border-radius: 5px;
+    display: block;
+}
+
+.thin-container .icons-gray {
+    height: 22px;
+    margin:  4px 0 20px 0;
 }
 
 .icons-gray {
@@ -94,6 +115,7 @@ body {
 #upDownImg {
     color: white;
     height: 10px;
+    align-self: center;
 }
 
 .thin-container {
@@ -103,11 +125,18 @@ body {
     background-color: black;
     border-radius: 10px;
 }
-
+.all-icons-container {
+    display: flex;
+    padding: 10px 10px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-content: center;
+    height: 45vh;
+    background-color: greenyellow;
+}
 #container-c {
     background-color: black;
 }
-
 
 h6 {
     font-size: var(--small-font);
@@ -125,14 +154,10 @@ h5 {
 
 .small-container div {
     display: flex;
-    align-items: center;
-    padding: 10px;
+    margin-bottom: 17px;
+    
+    /* align-items: center; */
+    /* padding: 10px; */
 }
 
-.thin-container div {
-    display: flex;
-    justify-content: center;
-    padding: 13px;
-
-}
 
