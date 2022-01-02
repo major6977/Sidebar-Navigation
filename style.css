@@ -9,12 +9,24 @@
 --small-font: 11px;
 }
 
-body {
+/* body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+} */
+
+#main-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
+
+/* @media (max-width: 300px) {
+    #main-container {
+        flex-direction: column;
+    }
+} */
 
 .background-white {
     background-color: white;
@@ -40,9 +52,10 @@ body {
 
 
 .small-container {
-    width: 23%;
+    min-width: 225px;
     height: 90%;
-    background-color: rebeccapurple;
+    position: relative;
+    background-color: #8456F0;
     margin: 10px;
     border-radius: 10px;
 }
@@ -54,9 +67,10 @@ body {
 
 .dashboard-background {
     background-color: hsla(0, 4%, 90%, 0.984);
+    align-self: center;
     width: 100%;
     padding: 5px;
-    margin: 0 5px 0 5px;
+    
     border-radius: 5px;
 }
 
@@ -79,9 +93,15 @@ body {
     
 }
 
+.dropbox-icons-acd {
+    margin-left: 5px;
+
+}
+
 .thin-container  div {
     display: flex;
-    margin: 13px 0;
+    position: relative;
+    margin: 20px 0;
     align-items: center; 
     flex-direction: column;
 }
@@ -93,11 +113,10 @@ body {
     /* padding: 13px; */
     align-items: center; 
     flex-direction: column;
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
 }
 .icons {
-    color: white;
-    background-color: hsl(300, 86%, 40%);
+    background-color: white;
     height: 20px;
     border-radius: 5px;
     display: block;
@@ -110,6 +129,7 @@ body {
 
 .icons-gray {
     background-color: white;
+    border-radius: 100%;
 }
 
 #upDownImg {
@@ -119,20 +139,26 @@ body {
 }
 
 .thin-container {
-    width: 5%;
+    width: 30px;
     height: 90%;
     margin: 10px;
+    text-align: center;
     background-color: black;
     border-radius: 10px;
 }
 .all-icons-container {
     display: flex;
     padding: 10px 10px;
+    margin-top: 11px;
     border-radius: 10px;
     flex-direction: column;
     align-content: center;
     height: 45vh;
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
+}
+
+.icons-under-house {
+    margin: 0 0 10px 5px;
 }
 #container-c {
     background-color: black;
@@ -159,5 +185,54 @@ h5 {
     /* align-items: center; */
     /* padding: 10px; */
 }
+
+.pictures-container {
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.picture {
+    height: 20px;
+    margin-left: 10px;
+    border-radius: 100%;
+    display: flex;
+}
+
+.Major {
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.cogwheel {
+    height: 15px;
+    margin-left: 60px;
+    background-color: white;
+    border-radius: 100%;
+    
+}
+
+.thin-container-pic {
+    margin: 176px 0 0 13px;
+    
+}
+
+.thin-pic-container {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+}
+
+.dashboard-bkg-color-blk {
+    background-color: #1f1d1d;
+}
+
+.dashboard-bkg-color-purple {
+    background-color: rgb(142, 98, 243)
+}
+
+
+
 
 
