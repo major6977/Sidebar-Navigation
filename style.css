@@ -8,19 +8,15 @@
 :root {
 --small-font: 11px;
 }
-
-/* body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+ /* body {
+    background-attachment: fixed;
+    background-color: rgba(240, 235, 235, 0.706);  
+    
 } */
 
-#main-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
+/* #main-container { 
+   
+}*/
 
 /* @media (max-width: 300px) {
     #main-container {
@@ -34,11 +30,24 @@
 .whiteText {
     color: white;
 }
-#main-container {
-    width: 80vw;
-    height: 90vh;
-    background-color: rgba(240, 235, 235, 0.706);
+
+   #gray-background-container {
     display: flex;
+    justify-content: stretch;
+    position: relative;
+    width: 80vw;
+    height: 100vh; 
+    background-color: rgba(240, 235, 235, 0.706);  
+    z-index: -1;
+}  
+#main-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: absolute; 
+    align-content: stretch;
+    width: 80vw;
+    height: 100vh; 
     justify-content: center;
     align-items: center;
 
@@ -53,7 +62,7 @@
 
 .small-container {
     min-width: 225px;
-    height: 90%;
+    height: 90vh;
     position: relative;
     background-color: #8456F0;
     margin: 10px;
@@ -127,6 +136,10 @@
     margin:  4px 0 20px 0;
 }
 
+#fastforward-icon {
+    margin: 25px 0;
+}
+
 .icons-gray {
     background-color: white;
     border-radius: 100%;
@@ -140,7 +153,7 @@
 
 .thin-container {
     width: 30px;
-    height: 90%;
+    height: 90vh;
     margin: 10px;
     text-align: center;
     background-color: black;
@@ -198,6 +211,10 @@ h5 {
     border-radius: 100%;
     display: flex;
 }
+/* .picture:hover {
+    cursor: pointer;
+    height: 30%;
+} */
 
 .Major {
     margin-left: 20px;
@@ -209,14 +226,11 @@ h5 {
     margin-left: 60px;
     background-color: white;
     border-radius: 100%;
-    
 }
 
 .thin-container-pic {
-    margin: 127px 0 0 0;
-
-    
-}
+    margin: 247px 0 0 0;
+ }
 
 .thin-pic-container {
     display: flex;
